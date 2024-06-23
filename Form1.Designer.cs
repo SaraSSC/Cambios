@@ -33,9 +33,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxOrigens = new System.Windows.Forms.ComboBox();
+            this.comboBoxDestino = new System.Windows.Forms.ComboBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.labelStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -90,28 +91,39 @@
             this.textBox1.Size = new System.Drawing.Size(564, 25);
             this.textBox1.TabIndex = 4;
             // 
-            // comboBox1
+            // comboBoxOrigens
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(339, 114);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(564, 24);
-            this.comboBox1.TabIndex = 5;
+            this.comboBoxOrigens.FormattingEnabled = true;
+            this.comboBoxOrigens.Location = new System.Drawing.Point(339, 114);
+            this.comboBoxOrigens.Name = "comboBoxOrigens";
+            this.comboBoxOrigens.Size = new System.Drawing.Size(564, 24);
+            this.comboBoxOrigens.TabIndex = 5;
             // 
-            // comboBox2
+            // comboBoxDestino
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(339, 196);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(564, 24);
-            this.comboBox2.TabIndex = 6;
+            this.comboBoxDestino.FormattingEnabled = true;
+            this.comboBoxDestino.Location = new System.Drawing.Point(339, 196);
+            this.comboBoxDestino.Name = "comboBoxDestino";
+            this.comboBoxDestino.Size = new System.Drawing.Size(564, 24);
+            this.comboBoxDestino.TabIndex = 6;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(692, 370);
+            this.progressBar1.Location = new System.Drawing.Point(692, 390);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(329, 48);
+            this.progressBar1.Size = new System.Drawing.Size(329, 28);
             this.progressBar1.TabIndex = 7;
+            // 
+            // labelStatus
+            // 
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.Font = new System.Drawing.Font("Bell MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelStatus.Location = new System.Drawing.Point(688, 366);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(61, 21);
+            this.labelStatus.TabIndex = 8;
+            this.labelStatus.Text = "Status:";
             // 
             // Form1
             // 
@@ -119,9 +131,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1039, 450);
+            this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxDestino);
+            this.Controls.Add(this.comboBoxOrigens);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -141,9 +154,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxOrigens;
+        private System.Windows.Forms.ComboBox comboBoxDestino;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label labelStatus;
     }
 }
 

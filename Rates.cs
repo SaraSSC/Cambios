@@ -12,5 +12,13 @@ namespace Cambios
         public string Code { get; set; }
         public double TaxRate { get; set; }
         public string Name { get; set; }
+
+
+        /* Método ToString para apresentar o nome da moeda
+         *public override string ToString()
+         *{
+         *  return $"{Name}";
+         *}
+         */
     }
 }
